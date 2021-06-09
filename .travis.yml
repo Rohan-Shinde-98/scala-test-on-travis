@@ -9,4 +9,5 @@ scala:
    - 2.12.13
 
 script:
-   - sbt test
+  - sbt -jvm-opts travis/jvmopts.compile ... compile
+  - sbt -jvm-opts travis/jvmopts.test ... test
