@@ -1,3 +1,5 @@
 object Main extends App {
-  println("Hello, World!")
+  def cube(x: Int) = {
+     x * x * x
+   }
 }
