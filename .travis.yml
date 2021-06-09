@@ -2,10 +2,5 @@ language: scala
 os: linux
 arch: amd64
 dist: focal
-jdk: openjdk-8-jre
-scala:
-   - 2.10.4
-   - 2.12.13
-
 script:
   - sbt test
