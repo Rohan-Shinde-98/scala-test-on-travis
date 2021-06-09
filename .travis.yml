@@ -9,4 +9,4 @@ scala:
    - 2.12.13
 
 script:
-   - sbt ++$TRAVIS_SCALA_VERSION test
+   - sbt test
