@@ -8,5 +8,4 @@ scala:
    - 2.12.13
 
 script:
-  - sbt -jvm-opts -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler ... compile
-  - sbt -jvm-opts -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler ... test
+  - sbt test
