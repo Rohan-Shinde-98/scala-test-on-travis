@@ -2,6 +2,6 @@ language: scala
 os: linux
 arch: ppc64le
 dist: focal
+jdk: openjdk11
 script:
-  - echo $JVM_OPTS
-  - sbt ++$TRAVIS_SCALA_VERSION -J-Xmx32m test
+  - sbt test
