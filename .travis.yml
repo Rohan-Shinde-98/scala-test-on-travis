@@ -1,6 +1,6 @@
 language: scala
 os: linux
-arch: amd64
+arch: ppc64le
 dist: focal
 script:
    - sbt ++$TRAVIS_SCALA_VERSION -Dfile.encoding=UTF8 -J-XX:+EnableJVMCIProduct -J-XX:ReservedCodeCacheSize=256M -J-Xms1024M test
