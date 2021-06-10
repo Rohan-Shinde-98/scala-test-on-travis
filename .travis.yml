@@ -3,11 +3,6 @@ os: linux
 arch: ppc64le
 dist: focal
 jdk:
-  - oraclejdk8
-
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
+  - jdk16
 script:
   - sbt test
