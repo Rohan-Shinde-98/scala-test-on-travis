@@ -3,4 +3,4 @@ os: linux
 arch: ppc64le
 dist: focal
 script:
-  - sbt test
+  - sbt ++$TRAVIS_SCALA_VERSION -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M -J-Xmx32m test
