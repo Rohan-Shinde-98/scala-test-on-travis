@@ -2,7 +2,5 @@ language: scala
 os: linux
 arch: amd64
 dist: focal
-jdk:
-  - jdk16
 script:
    - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
