@@ -5,4 +5,4 @@ dist: focal
 jdk:
   - jdk16
 script:
-  - sbt test
+   - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
