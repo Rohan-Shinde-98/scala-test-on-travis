@@ -1,8 +1,8 @@
 language: scala
 scala: 2.13.3
 os: linux
-arch: amd64
+arch: ppc64le
 dist: focal
-# jdk: default-jdk
+jdk: default-jdk
 script:
    - sbt ++$TRAVIS_SCALA_VERSION  test
