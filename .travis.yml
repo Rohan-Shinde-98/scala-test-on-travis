@@ -5,4 +5,4 @@ arch: ppc64le
 dist: focal
 jdk: default-jdk
 script:
-   - sbt ++$TRAVIS_SCALA_VERSION  test
+   - sbt ++$TRAVIS_SCALA_VERSION  -J-Xmx128m test
