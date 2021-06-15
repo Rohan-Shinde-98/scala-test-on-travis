@@ -5,4 +5,4 @@ arch: amd64
 dist: focal
 # jdk: default-jdk
 script:
-   - sbt ++$TRAVIS_SCALA_VERSION -J test
+   - sbt ++$TRAVIS_SCALA_VERSION  test
