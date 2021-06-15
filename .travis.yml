@@ -1,7 +1,7 @@
 language: scala
 scala: 2.13.3
-os: linux
-arch: ppc64le
+os: linux-ppc64le
+# arch: ppc64le
 dist: focal
 jdk: default-jdk
 script:
