@@ -3,11 +3,11 @@ scala: 2.13.3
 arch: 
    - ppc64le
    - amd64
-   - arm64
-   - s390x
 dist: focal
 script:
 #    - sudo mkdir -p /etc/sbt/
 #    - sudo touch /etc/sbt/jvmopts
 #    - sudo echo "Xmx2048M" > /etc/sbt/jvmopts
+   - sudo ls /etc/sbt
+   - ls /etc/sbt
    - sbt -v ++$TRAVIS_SCALA_VERSION  test
