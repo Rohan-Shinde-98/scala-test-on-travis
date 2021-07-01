@@ -6,7 +6,11 @@ dist: focal
 jdk: default-jdk
 script:
    - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
-   - echo $jvm-opts
-   - echo $sbt-opts
-   - echo $JVM_OPTS
-   - echo $SBT_OPTS
+   - cat $jvm-opts
+   - cat $sbt-opts
+   - cat $JVM_OPTS
+   - cat $SBT_OPTS
+   - echo $jvmopts
+   - echo $sbtopts
+   - cat $jvmopts
+   - cat $sbtopts
