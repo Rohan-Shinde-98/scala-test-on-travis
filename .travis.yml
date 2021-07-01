@@ -4,5 +4,7 @@ scala: 2.13.3
 arch: ppc64le
 dist: focal
 jdk: default-jdk
+before_script:
+   jvmopts=Xmx2048M
 script:
    - sbt ++$TRAVIS_SCALA_VERSION test
