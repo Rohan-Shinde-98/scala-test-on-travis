@@ -3,8 +3,9 @@ scala: 2.13.3
 # os: linux-ppc64le
 arch: ppc64le
 dist: focal
-jdk: default-jdk
-before_script:
-   - cat /etc/sbt/sbtconfig.txt
+# jdk: default-jdk
+# before_script:
+#    - cat /etc/sbt/sbtconfig.txt
 script:
+   - ls /etc/sbt
    - sbt ++$TRAVIS_SCALA_VERSION test
