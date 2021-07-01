@@ -6,4 +6,6 @@ arch:
    - amd64
 dist: focal
 script:
+   - sudo mkdir -p /etc/sbt/jvmopts
+   - sudo echo "Xmx2048M" > /etc/sbt/jvmopts
    - sbt -v ++$TRAVIS_SCALA_VERSION  test
