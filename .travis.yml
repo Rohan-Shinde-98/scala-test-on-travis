@@ -8,6 +8,6 @@ script:
 #    - sudo mkdir -p /etc/sbt/
 #    - sudo touch /etc/sbt/jvmopts
 #    - sudo echo "Xmx2048M" > /etc/sbt/jvmopts
-   - sudo ls /etc/sbt
-   - ls /etc/sbt
+   - sudo ls -l /etc/sbt
+   - ls -l /etc/sbt
    - sbt -v ++$TRAVIS_SCALA_VERSION  test
