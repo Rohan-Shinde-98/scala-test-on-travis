@@ -7,4 +7,4 @@ script:
 #    - sudo mkdir -p /etc/sbt/
 #    - sudo touch /etc/sbt/jvmopts
 #    - sudo ls -l /etc/sbt/*
-   - sbt ++$TRAVIS_SCALA_VERSION -v -XX:+UnlockExperimentalVMOptionsc -XX:+UseJVMCICompiler test
+   - sbt ++$TRAVIS_SCALA_VERSION -v -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler test
