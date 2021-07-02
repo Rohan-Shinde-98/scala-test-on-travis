@@ -7,4 +7,4 @@ script:
 #    - sudo mkdir -p /etc/sbt/
 #    - sudo touch /etc/sbt/jvmopts
 #    - sudo ls -l /etc/sbt/*
-   - sbt ++$TRAVIS_SCALA_VERSION -v test
+   - sbt -v ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
