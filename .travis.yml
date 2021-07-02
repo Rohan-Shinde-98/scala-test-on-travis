@@ -6,5 +6,5 @@ dist: focal
 script:
 #    - sudo mkdir -p /etc/sbt/
 #    - sudo touch /etc/sbt/jvmopts
-   - ls -l /etc/sbt/*
+   - sudo ls -l /etc/sbt/*
    - sbt ++$TRAVIS_SCALA_VERSION test
