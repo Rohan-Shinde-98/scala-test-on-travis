@@ -2,12 +2,9 @@ language: scala
 scala: 2.13.3
 arch: 
    - ppc64le
-   - amd64
 dist: focal
 script:
    - sudo mkdir -p /etc/sbt/
    - sudo touch /etc/sbt/jvmopts
-#    - sudo echo "Xmx2048M" > /etc/sbt/jvmopts
-#    - sudo ls -l /etc/sbt
-   - ls -l /etc/sbt
-   - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
+   - ls -l /etc/sbt/*
+   - sbt ++$TRAVIS_SCALA_VERSION test
